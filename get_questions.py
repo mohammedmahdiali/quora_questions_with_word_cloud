@@ -13,7 +13,6 @@ def get_questions(keyword):
     opts = webdriver.ChromeOptions()
     opts.add_argument("--window-size=400,400")
     driver = webdriver.Chrome('chromedriver.exe', chrome_options=opts)
-
     driver.get(CONST_MAIN_URL+keyword)
 
     counter = 0
